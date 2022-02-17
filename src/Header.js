@@ -17,6 +17,8 @@ function Header() {
   const login = () => {
     if (user) {
       auth.signOut();
+      localStorage.clear();
+      basket.splice(0);
 
      
     }
